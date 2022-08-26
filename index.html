@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Hideout</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Satisfy|Courgette|Dancing Script">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://wallpaperaccess.com/full/41570.jpg");
+  min-height: 90%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="r3-top">
+  <div class="r3-row r3-padding r3-black">
+    <div class="r3-col s3">
+      <a href="#" class="r3-button r3-block r3-black" style="font-family: 'Pacifico';">HOME</a>
+    </div>
+    <div class="r3-col s3">
+      <a href="#about" class="r3-button r3-block r3-black" style="font-family: 'Pacifico';">ABOUT</a>
+    </div>
+    <div class="r3-col s3">
+      <a href="#menu" class="r3-button r3-block r3-black" style="font-family: 'Pacifico';">MENU</a>
+    </div>
+    <div class="r3-col s3">
+      <a href="#where" class="r3-button r3-block r3-black" style="font-family: 'Pacifico';">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg r3-display-container r3-grayscale-min" id="home">
+  <div class="r3-display-middle r3-center">
+    <span class="r3-text-white" style="font-size:90px;font-family: 'Pacifico';"><br>The Hideout<br></span>
+    <span class="r3-text-white" style="font-size:50px;font-family: 'Satisfy';">Cafe Restro<br></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="r3-sand r3-grayscale r3-large">
+
+<!-- About Container -->
+<div class="r3-container" id="about">
+  <div class="r3-content" style="max-width:700px">
+    <h5 class="r3-center r3-padding-64"><span class="r3-tag r3-wide" style="font-family: 'Satisfy';">ABOUT US</span></h5>
+    <p style="font-family: 'Courgette';">Our philosophy is to be part of the neighbourhood and give back to our community.
+    We have carefully selected great tasting coffees from around the world. 
+    We are not only a place where you can drop in and get your morning cup of coffee, we are a place where you 
+    can sit down and enjoy the tailor-made cup of coffee. If you need to work, we have a seating area created specifically for you. If you need to rest, 
+    we have a soft-seating area in front of a stone fire place that is perfect for your weary mind and body. We look forward at serving you at The Hideout.</p>
+    <br>
+    <div class="r3-panel r3-leftbar r3-light-grey">
+      <p style="font-family: 'Courgette';"><b>"We believe a cup of coffee is one of the most important, simple pleasures in life."</b></p>
+      
+    </div>
+    <img src="https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?cs=srgb&dl=pexels-viktoria-alipatova-2074130.jpg&fm=jpg" style="width:100%;max-width:1000px" class="r3-margin-top">
+    <center><p style="font-family: 'Courgette';"><strong>Opening hours:</strong> everyday from 8am to 8pm.</p>
+    <p style="font-family: 'Courgette';"><strong>Address:</strong> 21 Hill street, 2069, GHY</p></center>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="r3-container" id="menu">
+  <div class="r3-content" style="max-width:700px">
+ 
+    <h5 class="r3-center r3-padding-48"><span class="r3-tag r3-wide" style="font-family: 'Satisfy';">THE MENU</span></h5>
+  
+    <div class="r3-row r3-center r3-card r3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="r3-col s6 tablink" style="font-family: 'Courgette';">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="r3-col s6 tablink" style="font-family: 'Courgette';">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="r3-container menu r3-padding-48 r3-card">
+      <h5 style="font-family: Dancing Script;">Bread Basket</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Assortment of fresh baked fruit breads and muffins &#x20B9 150.00</p><br>
+    
+      <h5 style="font-family: Dancing Script;" >Honey Almond Granola with Fruits</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Natural cereal of honey toasted oats, raisins, almonds and dates &#x20B9 170.00</p><br>
+    
+      <h5 style="font-family: Dancing Script;">Belgian Waffle</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Vanilla flavored batter with malted flour &#x20B9 200.00</p><br>
+    
+      <h5 style="font-family: Dancing Script;">Scrambled eggs</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Scrambled eggs, roasted red pepper and garlic, with green onions &#x20B9 150.00</p><br>
+    
+      <h5 style="font-family: Dancing Script;">Blueberry Pancakes</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">With syrup, butter and lots of berries &#x20B9 300.00</p>
+    </div>
+
+    <div id="Drinks" class="r3-container menu r3-padding-48 r3-card">
+      <h5 style="font-family: Dancing Script;">Coffee</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Regular coffee &#x20B9 50.00</p><br>
+    
+      <h5 style="font-family: Dancing Script;">Chocolato Espresso</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Chocolate espresso with milk &#x20B9 65.00</p><br>
+    
+      <h5 style="font-family: Dancing Script;">Corretto</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Whiskey and coffee  &#x20B9 105.00</p><br>
+    
+      <h5 style="font-family: Dancing Script;">Iced tea</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Hot tea, except not hot &#x20B9 40.00</p><br>
+    
+      <h5 style="font-family: Dancing Script;">Soda</h5>
+      <p class="r3-text-grey" style="font-family: Dancing Script;">Coke, Sprite, Fanta, etc. &#x20B9 25.00</p>
+    </div>  
+    <img src="https://www.beveragedaily.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/beveragedaily.com/news/markets/us-coffee-shop-market-grows-to-45.4bn-valuation-in-2018/8803729-1-eng-GB/US-coffee-shop-market-grows-to-45.4bn-valuation-in-2018.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+
+<center>
+<div class="r3-container" id="where" style="padding-bottom:32px;">
+  <div class="r3-content" style="max-width:700px">
+    <h5 class="r3-center r3-padding-48"><span class="r3-tag r3-wide" style="font-family: 'Courgette';">WHERE TO FIND US</span></h5>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.30977943848!2d91.66077811502902!3d26.15403888346015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a44c762f12a67%3A0x95386a0503457611!2sGauhati%20University!5e0!3m2!1sen!2sin!4v1661497843765!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p style="font-family: 'Courgette';"> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p style="font-family: 'Courgette';"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="r3-input r3-padding-16 r3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="r3-input r3-padding-16 r3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="r3-input r3-padding-16 r3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="r3-input r3-padding-16 r3-border" type="text" placeholder="Message / Special requirements" required name="Message"></p>
+      <button type="button" class="btn btn-primary btn-lg" style="font-family: 'Courgette';">SUBMIT</button>
+    </form>
+  </div>
+</div>
+</center>
+<!-- End page content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="r3-center r3-light-grey r3-padding-48 r3-large">
+  <p style="font-family: 'Courgette';"><span class="glyphicon glyphicon-copyright-mark"></span>The Hideout</p>    
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" r3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " r3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
